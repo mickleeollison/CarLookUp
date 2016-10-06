@@ -1,0 +1,23 @@
+﻿@model CarLookUp.Web.ViewModels.DetailsEmailVM
+@section Headers{
+    Content-Type: text/html; charset=utf-8}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title></title>
+</head>
+<body>
+    <div>
+        <strong>@Html.DisplayNameFor(model => model.Year):</strong>  @Html.DisplayFor(model => model.Year)
+    </div>
+    <div>
+        <strong>@Html.DisplayNameFor(model => model.Maker):</strong>  @Html.DisplayFor(model => model.Maker)
+    </div>
+    <div>
+        <strong>@Html.DisplayNameFor(model => model.Model):</strong>  @Html.DisplayFor(model => model.Model)
+    </div>
+</body>
+</html>

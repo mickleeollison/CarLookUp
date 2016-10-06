@@ -1,0 +1,22 @@
+﻿<div class="jumbotron">
+    @{
+        if (ViewBag.User == null)
+        {
+            <h1>You aren't logged in</h1>
+        }
+        else
+        {
+            <h1>You Are Logged in as <b>@ViewBag.User.UserName</b></h1>
+            <h5>@Html.ActionLink("Logg off", "Logoff", "Login")</h5>
+        }
+    }
+    <h1>CarLookUp</h1>
+    <p class="lead">Create,Remove,Change, and View Cars!</p>
+</div>
+<div class="row">
+    <div class="col-md-12">
+        <h2>Car Lookup Website</h2>
+        <p>A way for you to view a list of cars!</p>
+        <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301870">Learn more &raquo;</a></p>
+    </div>
+</div>
